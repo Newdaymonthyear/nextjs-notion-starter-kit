@@ -9,16 +9,16 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: '学习复盘',
+  name: 'Savior',
   domain: 'https://uttermost-chard-83d.notion.site/1b6824cefe3e425799d584c2391f9ffd',
   author: 'CODE',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  //description: 'Example Next.js Notion Starter Kit Site',
 
   // social usernames (optional)
   twitter: '',
-  github: 'Newdaymonthyear',
+  github: '',
   linkedin: '',
 
   // default notion icon and cover images for site-wide consistency (optional)
