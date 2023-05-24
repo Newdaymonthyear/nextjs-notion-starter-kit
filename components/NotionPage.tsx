@@ -29,7 +29,7 @@ import { Page404 } from './Page404'
 import { PageHead } from './PageHead'
 import { PageActions } from './PageActions'
 import { Footer } from './Footer'
-import { PageSocial } from './PageSocial'
+//import { PageSocial } from './PageSocial'
 import { NotionPageHeader } from './NotionPageHeader'
 //import { GitHubShareButton } from './GitHubShareButton'
 
@@ -252,14 +252,14 @@ export const NotionPage: React.FC<types.PageProps> = ({
   let pageAside: React.ReactNode = null
 
   // only display comments and page actions on blog post pages
-  if (isBlogPost) {
-    const tweet = getPageTweet(block, recordMap)
-    if (tweet) {
-      pageAside = <PageActions tweet={tweet} />
-    }
-  } else {
-    pageAside = <PageSocial />
-  }
+ // if (isBlogPost) {
+   // const tweet = getPageTweet(block, recordMap)
+   // if (tweet) {
+  //    pageAside = <PageActions tweet={tweet} />
+   // }
+ // } else {
+  //  pageAside = <PageSocial />
+//  }
 
   return (
     <TwitterContextProvider value={twitterContextValue}>
