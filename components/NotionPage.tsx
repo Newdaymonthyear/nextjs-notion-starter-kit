@@ -18,7 +18,7 @@ import { NotionRenderer } from 'react-notion-x'
 import { getBlockTitle, getPageProperty, formatDate } from 'notion-utils'
 import { mapPageUrl, getCanonicalPageUrl } from 'lib/map-page-url'
 import { mapImageUrl } from 'lib/map-image-url'
-import { getPageTweet } from 'lib/get-page-tweet'
+//import { getPageTweet } from 'lib/get-page-tweet'
 import { searchNotion } from 'lib/search-notion'
 import * as types from 'lib/types'
 import * as config from 'lib/config'
@@ -27,7 +27,7 @@ import * as config from 'lib/config'
 import { Loading } from './Loading'
 import { Page404 } from './Page404'
 import { PageHead } from './PageHead'
-import { PageActions } from './PageActions'
+//import { PageActions } from './PageActions'
 import { Footer } from './Footer'
 //import { PageSocial } from './PageSocial'
 import { NotionPageHeader } from './NotionPageHeader'
@@ -249,7 +249,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
     getPageProperty<string>('Description', block, recordMap) ||
     config.description
 
-  let pageAside: React.ReactNode = null
+ // let pageAside: React.ReactNode = null
 
   // only display comments and page actions on blog post pages
 //  if (isBlogPost) {
@@ -295,7 +295,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         mapPageUrl={siteMapPageUrl}
         mapImageUrl={mapImageUrl}
         searchNotion={config.isSearchEnabled ? searchNotion : null}
-        pageAside={pageAside}
+       // pageAside={pageAside}
         footer={<Footer />}
       />
 
